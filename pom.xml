@@ -7,14 +7,40 @@
     <version>3.1.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-
     <description>Proyecto multimoludo que tiene los componentes para inciar con la firma digital</description>
+
+
+    <licenses>
+        <license>
+            <name>GNU General Public License, Version 3</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Sarmiento H. Luis A.</name>
+            <email>lsarmientoheredia@gmail.com</email>
+            <organization>Sarmiento dev</organization>
+            <organizationUrl>http://solucionesSarmiento.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:https://minka.gob.ec/snap/firmadigital-api.git</connection>
+        <developerConnection>scm:git:git@minka.gob.ec:snap/firmadigital-api.git</developerConnection>
+        <url>https://minka.gob.ec/snap/firmadigital-api</url>
+        <tag>HEAD</tag>
+    </scm>
+
+
 
     <properties>
         <jakartaee-version>10.0.0</jakartaee-version>
         <maven.compiler.target>21</maven.compiler.target>
         <maven.compiler.source>21</maven.compiler.source>
         <version.compiler.plugin>3.13.0</version.compiler.plugin>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
 
