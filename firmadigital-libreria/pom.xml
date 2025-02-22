@@ -13,42 +13,8 @@
     <name>firmadigital-libreria</name>
     <description>Una librería para firma digital</description>
     <url>http://www.firmadigital.gob.ec</url>
-    <licenses>
-        <license>
-            <name>GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)</name>
-            <url>https://www.gnu.org/licenses/agpl-3.0.txt</url>
-        </license>
-    </licenses>
 
-    <developers>
-        <developer>
-            <name>Ricardo Arguello</name>
-            <email>ricardo.arguello@soportelibre.com</email>
-            <organization>Soporte Libre</organization>
-            <organizationUrl>http://www.soportelibre.com</organizationUrl>
-        </developer>
-        <developer>
-            <name>Misael Fernández Correa</name>
-            <email>misael.fernandez@mintel.gob.ec</email>
-            <organization>Ministerio de Telecomunicaciones y de la Sociedad de la Información</organization>
-            <organizationUrl>https://www.telecomunicaciones.gob.ec</organizationUrl>
-        </developer>
 
-        <developer>
-            <name>Efraín Rodríguez López</name>
-            <email>efrain.rodriguez@sercop.gob.ec</email>
-            <organization>Servicio Nacional de Contratación Pública</organization>
-            <organizationUrl>https://portal.compraspublicas.gob.ec/sercop/</organizationUrl>
-        </developer>
-
-    </developers>
-
-    <scm>
-        <connection>scm:git:https://minka.gob.ec/mintel/ge/firmaec/firmadigital-digital.git</connection>
-        <developerConnection>scm:git:git@minka.gob.ec:mintel/ge/firmaec/firmadigital-digital.git</developerConnection>
-        <url>https://minka.gob.ec/mintel/ge/firmaec/firmadigital-digital</url>
-    </scm>
-    
     <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
@@ -60,10 +26,6 @@
         </repository>
     </distributionManagement>
 
-    <properties>
-        <jakartaee>10.0.0</jakartaee>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
     <dependencies>
         <!--extensiones-->
@@ -160,7 +122,7 @@
         <dependency>
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-api</artifactId>
-            <version>${jakartaee}</version>
+            <version>${jakartaee-version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

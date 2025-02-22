@@ -58,7 +58,6 @@ public class ServicioFechaHora {
     @Produces(MediaType.TEXT_PLAIN)
     public String getFechaHora(@FormParam("base64") String base64) {
         try {
-            System.out.println("LA VERSION EN BASE 64 ES EN EL API"+base64);
             String respuesta = buscarVersion(base64);
             
             String resultado;
