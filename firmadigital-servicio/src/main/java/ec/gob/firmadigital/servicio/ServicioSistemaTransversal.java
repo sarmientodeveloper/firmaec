@@ -90,6 +90,7 @@ public class ServicioSistemaTransversal {
      */
     public Sistema buscarSistema(String nombre) throws ServicioSistemaTransversalException {
         try {
+			System.out.println("EL SISTEMA ES "+nombre);
             TypedQuery<Sistema> q = em.createQuery("SELECT s FROM Sistema s WHERE s.nombre = :nombre", Sistema.class);
             q.setParameter("nombre", nombre);
             return q.getSingleResult();

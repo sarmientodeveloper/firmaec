@@ -121,8 +121,10 @@ public class ServicioDocumentoRest {
         String cedula;
         String sistema;
 
+
         try {
             cedula = json.getString("cedula");
+			System.out.println(cedula);
         } catch (NullPointerException e) {
             System.out.println("::Error al decodificar JSON: Se debe incluir \"cedula\"");
             return Response.status(Status.BAD_REQUEST).entity(getClass().getSimpleName() + "::Error al decodificar JSON: Se debe incluir \"cedula\"")
@@ -131,6 +133,7 @@ public class ServicioDocumentoRest {
 
         try {
             sistema = json.getString("sistema");
+			System.out.println(sistema);
         } catch (NullPointerException e) {
             System.out.println("::Error al decodificar JSON: Se debe incluir \"sistema\"");
             return Response.status(Status.BAD_REQUEST).entity(getClass().getSimpleName() + "::Error al decodificar JSON: Se debe incluir \"sistema\"")
@@ -139,7 +142,7 @@ public class ServicioDocumentoRest {
 
         // Verificar API KEY
         if (!servicioSistemaTransversal.verificarApiKey(sistema, apiKey)) {
-            System.out.println("Error al validar API_KEY para el sistema: " + sistema);
+            System.out.println("Error al validar API_KEY para el sistema: " + sistema+" ===== "+apiKey);
             logger.log(Level.SEVERE, "Error al validar API_KEY para el sistema {0}", sistema);
             return Response.status(Status.FORBIDDEN).entity("Error al validar API_KEY").build();
         }

@@ -12,7 +12,7 @@
 
     <name>firmadigital-libreria</name>
     <description>Una librería para firma digital</description>
-    <url>http://www.firmadigital.gob.ec</url>
+    <url>https://www.firmadigital.gob.ec</url>
 
 
     <distributionManagement>
@@ -151,7 +151,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>${project.artifactId}</finalName>
+        <finalName>modulos_firma_ec</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

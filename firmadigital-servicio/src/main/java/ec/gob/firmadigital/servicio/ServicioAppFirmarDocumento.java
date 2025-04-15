@@ -98,7 +98,7 @@ public class ServicioAppFirmarDocumento {
             if ("pdf".equalsIgnoreCase(formatoDocumento)) {
                 Properties properties = Propiedades.propiedades(versionFirmaEC, llx, lly, pagina, tipoEstampado, razon, null, fechaHora, base64);
                 byteDocumentoSigned = firmador.firmarPDF(keyStore, alias, byteDocumento, password.toCharArray(), properties, null, base64);
-           System.out.println("SARMEINTO EL TAMAÑO ES " + byteDocumentoSigned);
+				System.out.println("EL BYTE CODE ES "+byteDocumentoSigned);
 
             }
         } catch (BadPasswordException bpe) {
